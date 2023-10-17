@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- cdn bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- cdn font-aws -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row py-1 bg ">
+                <div class="col-lg-12 ">
+                    <div class="container d-flex justify-content-between">
+                        <div class="time"><span>Mon - Sat: 08.00 AM - 18.00 PM</span></div>
+                        <div class="icon-header d-flex justify-content-between">
+                            <div class="icon-header--item px-3 ">
+                                <i class="fa-brands px-2 fa-facebook-f"></i>
+                                <i class="fa-brands px-2 fa-twitter"></i>
+                                <i class="fa-brands px-2 fa-instagram"></i>
+                                <i class="fa-brands px-2 fa-google"></i>
+                            </div>
+                            <div class="icon-header--item px-3 d-flex">
+                                <span>USD($)</span>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                            <div class="icon-header--item px-3 d-flex">
+                                <span>English</span>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <div class="col-lg-12 px-0 py-4 d-flex justify-content-between">
+                            <div class="logo">
+                                <span class="animate__heartBeat ">LemanHouse</span>
+                            </div>
+                            <div class="header-contact d-flex">
+                                <div class="header-contact--item d-flex">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>
+                                        +037-666-2880 <br> info@homesweet.com
+                                    </span>
+                                </div>
+                                <div class="header-contact--item d-flex">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>
+                                        PO Pox 16122 Collins Street West <br> Victoria 8007 Australia
+                                    </span>
+                                </div>
+                                <div class="header-contact--item d-flex">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 px-0">
+                    <div class="container-fluid px-0 nav-content">
+                        <nav class=" container-fluid navbar navbar-expand-lg py-0 px-0 navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="container nav_header justify-content-between navbar-collapse"
+                                id="navbarSupportedContent">
+                                <ul class="d-flex mb-0 navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a href="">
+                                            Home
+                                        </a>
+                                        <i class="fa-solid text-white fa-chevron-down ml-2"></i>
+
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="">Properties</a>
+                                        <i class="fa-solid text-white fa-chevron-down ml-2"></i>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="">Pages</a>
+                                        <i class="fa-solid text-white fa-chevron-down ml-2"></i>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="">Blog</a>
+                                        <i class="fa-solid text-white fa-chevron-down ml-2"></i>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="">Contact</a>
+                                        <i class="fa-solid text-white fa-chevron-down ml-2"></i>
+                                    </li>
+                                </ul>
+                                <div class="nav_header-item d-flex">
+                                    <div class="login">
+                                        <i class=" text-info fa-solid fa-user mr-2"></i>
+                                        login
+                                    </div>
+                                    <div class="register">
+                                        <i class=" text-info fa-solid fa-pencil mr-2"></i>
+                                        Register
+                                    </div>
+                                    <div class="submit-property">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Submit Proprety
+                                    </div>
+                                </div>
+
+                            </div>
+                        </nav>
+                        <!-- <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="">Properties</a>
+                                    <i class="fa-solid text-white fa-chevron-down ml-2"></i>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="">Properties</a>
+                                    <i class="fa-solid text-white fa-chevron-down ml-2"></i>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="">Properties</a>
+                                    <i class="fa-solid text-white fa-chevron-down ml-2"></i>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="">Properties</a>
+                                    <i class="fa-solid text-white fa-chevron-down ml-2"></i>
+                                </li>
+                        
+                              </ul>
+                           
+                            </div>
+                          </nav> -->
+                        <div class="banner-slider">
+                            <div class="slider">
+                                <div class="slider_content">
+                                    <h1 class="animate__animated animate__bounce  wow"
+                                        data-animation-in="animate__faceInDown">1 Lorem ipsum dolor sit amet.</h1>
+                                    <p class=" animate__animated animate__backInLeft wow">Lorem ipsum dolor sit amet.
+                                    </p>
+                                    <div class="button_wrap">
+                                        <a href="" class=" btn btn_transparent">button</a>
+                                        <a href="" class=" btn ">button</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider slider_two">
+                                <div class="slider_content">
+                                    <h1 class="animate__animated animate__bounce animate__delay-3s animate__duration-2s wow"
+                                        data-animation-in="animate__faceInDown">2 Lorem ipsum dolor sit amet.</h1>
+                                    <p class=" animate__animated animate__backInLeft wow">Lorem ipsum dolor sit amet.
+                                    </p>
+                                    <div class="button_wrap">
+                                        <a href="" class=" btn btn_transparent">button</a>
+                                        <a href="" class=" btn ">button</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider slider_three">
+                                <div class="slider_content">
+                                    <h1 class="animate__animated animate__bounce animate__delay-5s animate__duration-1s wow"
+                                        data-animation-in="animate__faceInDown">3 Lorem ipsum dolor sit amet.</h1>
+                                    <p class=" animate__animated animate__backInLeft wow">Lorem ipsum dolor sit amet.
+                                    </p>
+                                    <div class="button_wrap">
+                                        <a href="" class=" btn btn_transparent">button</a>
+                                        <a href="" class=" btn ">button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <article>
+        <section>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-lg-4 mb-4 d-flex justify-content-center">
+                        <div class="card wow animate__animated  animate__backInUp" data-wow-delay="0.1s"
+                            style="width: 100%;">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span>$ 490,000 <label for="">/ monthly</label></span>
+                                <h2>Can ho cao cap</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <ul class="d-flex">
+                                    <li>
+                                        <i class="fa-solid fa-bed"></i>
+                                        <span>Phòng ngủ</span>
+                                    </li>
+                                    <li>
+                                        2
+                                        <i class="fa-solid fa-bath"></i>
+                                        <span>Phòng tắm</span>
+                                    </li>
+                                    <li>
+                                        250
+                                        <i class="fa-regular fa-square"></i>
+                                        <span>m2</span>
+                                    </li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 d-flex justify-content-center">
+                        <div class="card wow animate__animated  animate__backInUp" data-wow-delay="0.2s"
+                            style="width: 100%;">
+                            <img class="card-img-top"
+                                src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span>$ 490,000 <label for="">/ monthly</label></span>
+                                <h2>Can ho cao cap</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <ul class="d-flex">
+                                    <li>3
+                                        <i class="fa-solid fa-bed"></i>
+                                        <span class="">Phòng ngủ</span>
+                                    </li>
+                                    <li>
+                                        2
+                                        <i class="fa-solid fa-bath"></i>
+                                        <span class="">Phòng tắm</span>
+                                    </li>
+                                    <li>
+                                        250
+                                        <i class="fa-regular fa-square"></i>
+                                        <span class="">m2</span>
+                                    </li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 d-flex justify-content-center">
+                        <div class="card wow animate__animated  animate__backInUp" data-wow-delay="0.3s"
+                            style="width: 100%;">
+                            <img class="card-img-top"
+                                src="https://plus.unsplash.com/premium_photo-1686090448517-2f692cc45187?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span>$ 490,000 <label for="">/ monthly</label></span>
+                                <h2>Can ho cao cap</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <ul class="d-flex">
+                                    <li>3
+                                        <i class="fa-solid fa-bed"></i>
+                                        <span class="">Phòng ngủ</span>
+                                    </li>
+                                    <li>
+                                        2
+                                        <i class="fa-solid fa-bath"></i>
+                                        <span class="">Phòng tắm</span>
+                                    </li>
+                                    <li>
+                                        250
+                                        <i class="fa-regular fa-square"></i>
+                                        <span class="">m2</span>
+                                    </li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 d-flex justify-content-center">
+                        <div class="card wow animate__animated  animate__backInUp" data-wow-delay="0.3s"
+                            style="width: 100%;">
+                            <img class="card-img-top"
+                                src="https://plus.unsplash.com/premium_photo-1686090448517-2f692cc45187?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span>$ 490,000 <label for="">/ monthly</label></span>
+                                <h2>Can ho cao cap</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <ul class="d-flex">
+                                    <li>3
+                                        <i class="fa-solid fa-bed"></i>
+                                        <span class="">Phòng ngủ</span>
+                                    </li>
+                                    <li>
+                                        2
+                                        <i class="fa-solid fa-bath"></i>
+                                        <span class="">Phòng tắm</span>
+                                    </li>
+                                    <li>
+                                        250
+                                        <i class="fa-regular fa-square"></i>
+                                        <span class="">m2</span>
+                                    </li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 d-flex justify-content-center">
+                        <div class="card wow animate__animated  animate__backInUp" data-wow-delay="0.3s"
+                            style="width: 100%;">
+                            <img class="card-img-top"
+                                src="https://plus.unsplash.com/premium_photo-1686090448517-2f692cc45187?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span>$ 490,000 <label for="">/ monthly</label></span>
+                                <h2>Can ho cao cap</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <ul class="d-flex">
+                                    <li>3
+                                        <i class="fa-solid fa-bed"></i>
+                                        <span class="">Phòng ngủ</span>
+                                    </li>
+                                    <li>
+                                        2
+                                        <i class="fa-solid fa-bath"></i>
+                                        <span class="">Phòng tắm</span>
+                                    </li>
+                                    <li>
+                                        250
+                                        <i class="fa-regular fa-square"></i>
+                                        <span class="">m2</span>
+                                    </li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 d-flex justify-content-center">
+                        <div class="card wow animate__animated  animate__backInUp" data-wow-delay="0.3s"
+                            style="width: 100%;">
+                            <img class="card-img-top"
+                                src="https://plus.unsplash.com/premium_photo-1686090448517-2f692cc45187?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span>$ 490,000 <label for="">/ monthly</label></span>
+                                <h2>Can ho cao cap</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <ul class="d-flex">
+                                    <li>3
+                                        <i class="fa-solid fa-bed"></i>
+                                        <span class="">Phòng ngủ</span>
+                                    </li>
+                                    <li>
+                                        2
+                                        <i class="fa-solid fa-bath"></i>
+                                        <span class="">Phòng tắm</span>
+                                    </li>
+                                    <li>
+                                        250
+                                        <i class="fa-regular fa-square"></i>
+                                        <span class="">m2</span>
+                                    </li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="list-project ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="d-flex count mb-0">
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-ruler-combined"></i>
+                                </div>
+                                <span class="counter">560</span><span>+</span>
+                                <h6>Tổng diện tích sàn</h6>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <span class="counter">197</span><span>K+</span>
+                                <h6>Căn hộ đã bán</h6>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-file-pen"></i>
+                                </div>
+                                <span class="counter">268</span><span>+</span>
+                                <h6>Dự án</h6>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-couch"></i>
+                                </div>
+
+                                <span class="counter">340</span><span>+</span>
+                                <h6>Số phòng</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container project-house">
+                <span class="wow animate__animated animate__backInDown">Dự Án Mới</span>
+                <div class="row project-house-content ">
+                    <div class="col-lg-6 pr-5">
+                        <h1 class="wow animate__animated animate__bounceInLeft">Regal Maison Phu Yen</h1>
+                        <p class="wow animate__animated animate__bounceInLeft">Regal Maison Phu Yen là dự án nhà phố
+                            thương mại (shophouse) hạng sang chuẩn 5 sao quốc tế ấn tượng bậc nhất Việt Nam, thuộc
+                            thương hiệu Regal Homes của Đất Xanh Miền Trung.</p>
+                        <ul class="description-house ">
+                            <li class="d-flex wow animate__animated animate__bounceInLeft" data-wow-delay="0.2s">
+                                <i class="fa-solid fa-minus"></i>
+                                <p class="mb-0">Đại lộ Hùng Vương, Xã Bình Kiến, TP. Tuy Hòa, Phú Yên</p>
+
+                            </li>
+                            <li class="d-flex wow animate__animated animate__bounceInLeft" data-wow-delay="0.3s">
+                                <i class="fa-solid fa-minus"></i>
+                                <p class="mb-0">Loại hình sản phẩm: Nhà phố kinh doanh, nghỉ dưỡng</p>
+
+                            </li>
+                            <li class="d-flex wow animate__animated animate__bounceInLeft" data-wow-delay="0.4s">
+                                <i class="fa-solid fa-minus"></i>
+                                <p class="mb-0">Quy mô: 55 căn</p>
+
+                            </li>
+                            <li class="d-flex wow animate__animated animate__bounceInLeft" data-wow-delay="0.5s">
+                                <i class="fa-solid fa-minus"></i>
+                                <p class="mb-0">Đơn vị phát triển: Leman Homes</p>
+
+                            </li>
+                        </ul>
+                        <ul class="information-house wow d-flex animate__animated animate__bounceInLeft"
+                            data-wow-delay="0.6s">
+                            <li>3
+                                <i class="fa-solid fa-bed"></i>
+                                <span class="d-block">Phòng ngủ</span>
+                            </li>
+                            <li>
+                                2
+                                <i class="fa-solid fa-bath"></i>
+                                <span class="d-block">Phòng tắm</span>
+                            </li>
+                            <li>
+                                2
+                                <i class="fa-solid fa-car"></i>
+                                <span class="d-block">Đỗ xe</span>
+                            </li>
+                            <li>
+                                3450
+                                <i class="fa-regular fa-square"></i> m2
+                                <span class="d-block">Diện tích</span>
+                            </li>
+                        </ul>
+                        <ul class="d-flex detail-img pl-0 my-0 wow animate__animated animate__bounceInLeft" data-wow-delay="0.7s">
+                            <li><img class="img-fluid " src="img/img-house-1.jpg" alt=""></li>
+                            <li><img class="img-fluid" src="img/img-house-2.jpg" alt=""></li>
+                            <li><img class="img-fluid" src="img/img-house-3.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pl-5 information-house--img   ">
+                        <img class="animate__animated animate__bounceInRight img-fluid wow" data-wow-delay="0.4s"
+                            src="img/img-house.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 px-0">
+                        <div class="banner-video">
+                            <a id="playButton" class="wow animate__animated animate__bounce btn btn-primary "
+                                data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"><i
+                                    class=" fa-solid fa-play"></i></a>
+                            <div id="videoContainer">
+                                <div id="videoBox d-flex" class="justify-content-center d-flex my-4">
+                                    <button id="closeButton" class="btn btn-secondary">
+                                        <i class="fa fa-close"></i> <!-- Sử dụng biểu tượng từ Font Awesome -->
+                                    </button>
+                                    <video id="video" controls>
+                                        <source src="/Home/img/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="house-project" style="background-color: rgba(212,233,226,.33)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="pb-5">
+                            <div class="tabs-heading text-center">
+                                <h6>REGAL PAVILLON ĐÀ NẴNG</h6>
+                                <h2>Chi Tiết Dự Án</h2>
+                            </div>
+                            <div class="justify-content-center nav nav-tabs mb-0" id="nav-tab" role="tablist">
+                                <button style="font-weight: 500; font-size: 20px;letter-spacing: 1px; color: #454242;"
+                                    class=" mx-3 px-2 nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                    aria-selected="true">Studio</span></button>
+                                <button style="font-weight: 500; font-size: 20px;letter-spacing: 1px; color: #454242;"
+                                    class=" mx-3 px-2 nav-link " id="nav-profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">Duplex</span></button>
+                                <button style="font-weight: 500; font-size: 20px;letter-spacing: 1px; color: #454242;"
+                                    class=" mx-3 px-2 nav-link " id="nav-contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false">Penthouse</span></button>
+                                <button style="font-weight: 500; font-size: 20px;letter-spacing: 1px; color: #454242;"
+                                    class=" mx-3 px-2 nav-link " id="nav-about-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-about"
+                                    aria-selected="false"> Shophouse</span></button>
+                                <button style="font-weight: 500; font-size: 20px;letter-spacing: 1px; color: #454242;"
+                                    class=" mx-3 px-2 nav-link " id="nav-blog-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-blog" type="button" role="tab" aria-controls="nav-blog"
+                                    aria-selected="false"> Sky Villa</span></button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab" tabindex="0">
+                                <div class="row d-flex">
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__description">
+                                            <h3>Căn hộ Duplex</h3>
+                                            <p>Căn hộ Duplex là hình thức thiết kế căn hộ thông tầng giữa ít nhất hai
+                                                tầng liền kề trong cùng một tòa nhà.</p>
+                                            <div class="apartments-plan-info">
+                                                <ul>
+                                                    <li>
+                                                        <label>Tổng diện tích</label>
+                                                        <span>.............................................................</span>
+                                                        <span>250 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng ngủ</label>
+                                                        <span>.............................................................</span>
+                                                        <span>50 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng tắm</label>
+                                                        <span>.............................................................</span>
+                                                        <span>30 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Ban công</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Hành lang</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane__description-img mt-5">
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-1.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-2.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-3.jpg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__img">
+                                            <img class="img-fluid" src="img/ban-tk.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab" tabindex="0">
+                                <div class="row d-flex">
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__description">
+                                            <h3>Căn hộ Duplex</h3>
+                                            <p>Căn hộ Duplex là hình thức thiết kế căn hộ thông tầng giữa ít nhất hai
+                                                tầng liền kề trong cùng một tòa nhà.</p>
+                                            <div class="apartments-plan-info">
+                                                <ul>
+                                                    <li>
+                                                        <label>Tổng diện tích</label>
+                                                        <span>.............................................................</span>
+                                                        <span>250 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng ngủ</label>
+                                                        <span>.............................................................</span>
+                                                        <span>50 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng tắm</label>
+                                                        <span>.............................................................</span>
+                                                        <span>30 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Ban công</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Hành lang</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane__description-img mt-5">
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-1.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-2.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-3.jpg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__img">
+                                            <img class="img-fluid" src="img/ban-tk.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                aria-labelledby="nav-contact-tab" tabindex="0">
+                                <div class="row d-flex">
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__description">
+                                            <h3>Căn hộ Duplex</h3>
+                                            <p>Căn hộ Duplex là hình thức thiết kế căn hộ thông tầng giữa ít nhất hai
+                                                tầng liền kề trong cùng một tòa nhà.</p>
+                                            <div class="apartments-plan-info">
+                                                <ul>
+                                                    <li>
+                                                        <label>Tổng diện tích</label>
+                                                        <span>.............................................................</span>
+                                                        <span>250 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng ngủ</label>
+                                                        <span>.............................................................</span>
+                                                        <span>50 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng tắm</label>
+                                                        <span>.............................................................</span>
+                                                        <span>30 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Ban công</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Hành lang</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane__description-img mt-5">
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-1.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-2.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-3.jpg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__img">
+                                            <img class="img-fluid" src="img/ban-tk.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-disabled" role="tabpanel"
+                                aria-labelledby="nav-disabled-tab" tabindex="0">
+                                <div class="row d-flex">
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__description">
+                                            <h3>Căn hộ Duplex</h3>
+                                            <p>Căn hộ Duplex là hình thức thiết kế căn hộ thông tầng giữa ít nhất hai
+                                                tầng liền kề trong cùng một tòa nhà.</p>
+                                            <div class="apartments-plan-info">
+                                                <ul>
+                                                    <li>
+                                                        <label>Tổng diện tích</label>
+                                                        <span>.............................................................</span>
+                                                        <span>250 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng ngủ</label>
+                                                        <span>.............................................................</span>
+                                                        <span>50 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng tắm</label>
+                                                        <span>.............................................................</span>
+                                                        <span>30 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Ban công</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Hành lang</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane__description-img mt-5">
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-1.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-2.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-3.jpg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__img">
+                                            <img class="img-fluid" src="img/ban-tk.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab"
+                                tabindex="0">
+                                <div class="row d-flex">
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__description">
+                                            <h3>Căn hộ Duplex</h3>
+                                            <p>Căn hộ Duplex là hình thức thiết kế căn hộ thông tầng giữa ít nhất hai
+                                                tầng liền kề trong cùng một tòa nhà.</p>
+                                            <div class="apartments-plan-info">
+                                                <ul>
+                                                    <li>
+                                                        <label>Tổng diện tích</label>
+                                                        <span>.............................................................</span>
+                                                        <span>250 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng ngủ</label>
+                                                        <span>.............................................................</span>
+                                                        <span>50 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng tắm</label>
+                                                        <span>.............................................................</span>
+                                                        <span>30 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Ban công</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Hành lang</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane__description-img mt-5">
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-1.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-2.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-3.jpg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__img">
+                                            <img class="img-fluid" src="img/ban-tk.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
+                                tabindex="0">
+                                <div class="row d-flex">
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__description">
+                                            <h3>Căn hộ Duplex</h3>
+                                            <p>Căn hộ Duplex là hình thức thiết kế căn hộ thông tầng giữa ít nhất hai
+                                                tầng liền kề trong cùng một tòa nhà.</p>
+                                            <div class="apartments-plan-info">
+                                                <ul>
+                                                    <li>
+                                                        <label>Tổng diện tích</label>
+                                                        <span>.............................................................</span>
+                                                        <span>250 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng ngủ</label>
+                                                        <span>.............................................................</span>
+                                                        <span>50 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Phòng tắm</label>
+                                                        <span>.............................................................</span>
+                                                        <span>30 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Ban công</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Hành lang</label>
+                                                        <span>.............................................................</span>
+                                                        <span>10 M2</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane__description-img  mt-5">
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-1.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-2.jpg" alt=""></div>
+                                                <div class="tab-pane__description-img-item"><img class="img-fluid"
+                                                        src="img/img-house-3.jpg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-pane__img">
+                                            <img class="img-fluid" src="img/ban-tk.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   <section class="customer-feedback">
+    <div class="container">
+        <div class="row text-center ">
+            <div class="col-lg-12 customer-feedback-text">
+                <span>Phản Hồi</span>
+                <h1>Cảm Nhận Của Khách Hàng</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="customer-feedback-container">
+               <div class="col-lg-4 mx-2">
+                <div class="feedback-content">
+                    <div class="feedback-content-text">
+                        <p>
+                            <i class="fa-solid fa-quote-left"></i>
+                            Với tôi, ngôi nhà không chỉ đơn giản là nơi để ở mà nó phải là một FASHION HOME - một biểu tượng của
+                            thời trang, của nghệ thuật kiến trúc nhà ở.
+                        </p>
+                    </div>
+                    <div class="feedback-content-info">
+                        <div class="avatar-feedback"><img class="img-fluid" src="img/ava1.avif" alt=""></div>
+                        <div class="des-feedback">
+                            <span class="name-feedback">Nguyen Van A</span>
+                            <span class="skill">Chuyên Viên</span>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="col-lg-4 mx-2">
+                <div class="feedback-content">
+                    <div class="feedback-content-text">
+                        <p>
+                            <i class="fa-solid fa-quote-left"></i>
+                            Với tôi, ngôi nhà không chỉ đơn giản là nơi để ở mà nó phải là một FASHION HOME - một biểu tượng của
+                            thời trang, của nghệ thuật kiến trúc nhà ở.
+                        </p>
+                    </div>
+                    <div class="feedback-content-info">
+                        <div class="avatar-feedback"><img class="img-fluid" src="img/ava1.avif" alt=""></div>
+                        <div class="des-feedback">
+                            <span class="name-feedback">Nguyen Van A</span>
+                            <span class="skill">Chuyên Viên</span>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="col-lg-4 mx-2">
+                <div class="feedback-content">
+                    <div class="feedback-content-text">
+                        <p>
+                            <i class="fa-solid fa-quote-left"></i>
+                            Với tôi, ngôi nhà không chỉ đơn giản là nơi để ở mà nó phải là một FASHION HOME - một biểu tượng của
+                            thời trang, của nghệ thuật kiến trúc nhà ở.
+                        </p>
+                    </div>
+                    <div class="feedback-content-info">
+                        <div class="avatar-feedback"><img class="img-fluid" src="img/ava1.avif" alt=""></div>
+                        <div class="des-feedback">
+                            <span class="name-feedback">Nguyen Van A</span>
+                            <span class="skill">Chuyên Viên</span>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="col-lg-4 mx-2">
+                <div class="feedback-content">
+                    <div class="feedback-content-text">
+                        <p>
+                            <i class="fa-solid fa-quote-left"></i>
+                            Với tôi, ngôi nhà không chỉ đơn giản là nơi để ở mà nó phải là một FASHION HOME - một biểu tượng của
+                            thời trang, của nghệ thuật kiến trúc nhà ở.
+                        </p>
+                    </div>
+                    <div class="feedback-content-info">
+                        <div class="avatar-feedback"><img class="img-fluid" src="img/ava1.avif" alt=""></div>
+                        <div class="des-feedback">
+                            <span class="name-feedback">Nguyen Van A</span>
+                            <span class="skill">Chuyên Viên</span>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="col-lg-4 mx-2">
+                <div class="feedback-content">
+                    <div class="feedback-content-text">
+                        <p>
+                            <i class="fa-solid fa-quote-left"></i>
+                            Với tôi, ngôi nhà không chỉ đơn giản là nơi để ở mà nó phải là một FASHION HOME - một biểu tượng của
+                            thời trang, của nghệ thuật kiến trúc nhà ở.
+                        </p>
+                    </div>
+                    <div class="feedback-content-info">
+                        <div class="avatar-feedback"><img class="img-fluid" src="img/ava1.avif" alt=""></div>
+                        <div class="des-feedback">
+                            <span class="name-feedback">Nguyen Van A</span>
+                            <span class="skill">Chuyên Viên</span>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="post-title text-center">
+                        <span>Tin tức</span>
+                        <h1>Bài viết</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               <div class="post-container">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="post-content">
+                       <div class="post-content-img hover-img">
+                        <a href=""><img class="img-fluid" src="img/img-house-2.jpg" alt=""></a>
+                       </div>
+                       <div class="post-content-des">
+                        <div class="post-des-tag">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Tác giả: Nguyen Kien</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tag"></i>
+                                    <span>Trang Trí</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="post-content-title">
+                        <a href="">10 Cách Để Trang Trí Ngôi Nhà Của Bạn</a>
+                        </div>
+                        <div class="post-content-time">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <span>22/10/2023</span>
+                                </li>
+                                <li><a href="">Đọc Thêm</a></li>
+                            </ul>
+                        </div>
+                       </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="post-content">
+                       <div class="post-content-img hover-img">
+                        <a href=""><img class="img-fluid" src="img/img-house-2.jpg" alt=""></a>
+                       </div>
+                       <div class="post-content-des">
+                        <div class="post-des-tag">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Tác giả: Nguyen Kien</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tag"></i>
+                                    <span>Trang Trí</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="post-content-title">
+                        <a href="">10 Cách Để Trang Trí Ngôi Nhà Của Bạn</a>
+                        </div>
+                        <div class="post-content-time">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <span>22/10/2023</span>
+                                </li>
+                                <li><a href="">Đọc Thêm</a></li>
+                            </ul>
+                        </div>
+                       </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="post-content">
+                       <div class="post-content-img hover-img">
+                        <a href=""><img class="img-fluid" src="img/img-house-2.jpg" alt=""></a>
+                       </div>
+                       <div class="post-content-des">
+                        <div class="post-des-tag">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Tác giả: Nguyen Kien</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tag"></i>
+                                    <span>Trang Trí</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="post-content-title">
+                        <a href="">10 Cách Để Trang Trí Ngôi Nhà Của Bạn</a>
+                        </div>
+                        <div class="post-content-time">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <span>22/10/2023</span>
+                                </li>
+                                <li><a href="">Đọc Thêm</a></li>
+                            </ul>
+                        </div>
+                       </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="post-content">
+                       <div class="post-content-img hover-img">
+                        <a href=""><img class="img-fluid" src="img/img-house-2.jpg" alt=""></a>
+                       </div>
+                       <div class="post-content-des">
+                        <div class="post-des-tag">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Tác giả: Nguyen Kien</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tag"></i>
+                                    <span>Trang Trí</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="post-content-title">
+                        <a href="">Những Xu Hướng Thiết Kế Không Thể Bỏ Qua Năm 2021</a>
+                        </div>
+                        <div class="post-content-time">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <span>22/10/2023</span>
+                                </li>
+                                <li><a href="">Đọc Thêm</a></li>
+                            </ul>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="post-content">
+                       <div class="post-content-img hover-img">
+                        <a href=""><img class="img-fluid" src="img/img-house-2.jpg" alt=""></a>
+                       </div>
+                       <div class="post-content-des">
+                        <div class="post-des-tag">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Tác giả: Nguyen Kien</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tag"></i>
+                                    <span>Trang Trí</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="post-content-title">
+                        <a href="">Nhưng Thương Vụ Mua Bán M&A</a>
+                        </div>
+                        <div class="post-content-time">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <span>22/10/2023</span>
+                                </li>
+                                <li><a href="">Đọc Thêm</a></li>
+                            </ul>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+   </section>
+    </article>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    <!-- boostrap sct -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Count up  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- wow js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick cdn -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
