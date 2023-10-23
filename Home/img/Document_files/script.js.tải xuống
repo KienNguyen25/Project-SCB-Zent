@@ -18,18 +18,19 @@ new WOW().init();
       $('.slick-dots > li > button').html('');
       // const element = document.querySelector('h1');
       // element.classList.add('animate__animated', 'animate__faceInDown');
-      $(window).scroll(function(event){
-        // console.log('vi tru ccua bna');
-        // console.log($('html').scrollTop());
-        var location = $('html').scrollTop()
-        if( location >=200){
-          $('#navbar').addClass('new-nav');
-          // $('.submit-property').css({'border-radius': '25px','margin-right':'20px'});
-        }else{
-          $('#navbar').removeClass('new-nav') 
-          // $('.submit-property').css({'border-radius': 'none','margin-right':'0'});
-        }
-      });
+      // $(window).scroll(function(event){
+      //   console.log('vi tru ccua bna');
+      //   console.log($('html').scrollTop());
+      //   var location = $('html').scrollTop()
+      //   if( location >=200){
+      //     $('.nav_header').addClass('new-nav container-fluid');
+      //     $('.submit-property').css({'border-radius': '25px','margin-right':'20px'});
+      //   }else{
+      //     $('.nav_header').removeClass('new-nav') 
+      //     $('.submit-property').css({'border-radius': 'none','margin-right':'0'});
+
+      //   }
+      // });
       $('.counter').counterUp({
         delay: 10,
         time: 1000
@@ -121,6 +122,9 @@ new WOW().init();
           slidesToScroll: 1
         }
       }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
     ]
   });
 
@@ -139,6 +143,4 @@ new WOW().init();
       }, 500);
   });
   new WOW().init();
-  // range price
-  
   });
