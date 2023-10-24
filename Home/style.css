@@ -539,6 +539,9 @@ header .row.bg{
     object-fit: cover;
     z-index: -1; /* Đặt z-index thấp hơn nội dung để video nền */
   }
+  #videoBox #video{
+    margin-top: 80px !important;
+  }
   
   .video-container .content {
     position: relative;
@@ -593,7 +596,7 @@ header .row.bg{
 
 #closeButton {
     position: absolute;
-    top: 28px;
+    top: 110px;
     right: 85px;
     /* background-color: #ccc; */
     border: none;
