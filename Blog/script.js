@@ -31,6 +31,51 @@ $(document).ready(function(){
           scrollTop:0
           }, 500);
       });
+      $('#phone-call').hide();
+      $(window).scroll(function(){
+        if($(this).scrollTop()){
+          $('#phone-call').fadeIn();
+        }else{
+          $('#phone-call').fadeOut();
+        }
+      });
+      $('#phone-call').click(function(){
+        $('html, body').animate({
+          scrollTop:0
+          }, 500);
+      });
       new WOW().init();
+      $('#id-form').submit(function (event) {
+        var valid = true;
+
+        // Clear any previous error messages
+        $('.error-message').remove();
+
+        // Check "Tên của bạn" field
+        var nameInput = $('#id-form input[placeholder="Tên của bạn"]');
+        if (nameInput.val().trim() === '') {
+            valid = false;
+            nameInput.after('<div class="error-message">Vui lòng nhập Tên của bạn</div>');
+        }
+
+        // Check "Email" field
+        var emailInput = $('#id-form input[placeholder="Email"]');
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (emailInput.val().trim() === '' || !emailPattern.test(emailInput.val())) {
+            valid = false;
+            emailInput.after('<div class="error-message">Vui lòng nhập Email hợp lệ</div>');
+        }
+
+        // Check "Viết lời nhắn" textarea
+        var messageTextarea = $('#id-form textarea');
+        if (messageTextarea.val().trim() === '') {
+            valid = false;
+            messageTextarea.after('<div class="error-message">Vui lòng viết lời nhắn</div>');
+        }
+
+        if (!valid) {
+            event.preventDefault(); // Prevent the form from submitting if there are errors
+        }
+    });
             
 });

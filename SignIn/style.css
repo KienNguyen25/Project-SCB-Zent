@@ -1,110 +1,137 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-:root{
-    --primary-bg-bule : #dcf2f7;
+
+:root {
+    --primary-bg-bule: #dcf2f7;
     --primary-color-blue: #83b0bb;
-    --text-color: #696767; 
+    --text-color: #696767;
     --new-text-green: rgb(34, 199, 56);
-    --new--bg-green :rgb(112 172 112 / 42%);
+    --new--bg-green: rgb(112 172 112 / 42%);
     --text-orange: #f5821f;
 }
-header .row.bg{
+
+header .row.bg {
     background-color: var(--primary-bg-bule);
 }
-.time > span{
-    color:#90c1cb
+.nav-link{
+    color: #fff;
 }
-.icon-header--item{
+
+.time>span {
+    color: #90c1cb;
+}
+
+.icon-header--item {
     /* display: flex;
     align-items: center; */
 }
+
 .icon-header--item:first-child i,
 .icon-header--item:nth-child(2) i,
-.icon-header--item:nth-child(3) i{
+.icon-header--item:nth-child(3) i {
     color: var(--primary-color-blue);
 }
+
 .icon-header--item:nth-child(2) span,
-.icon-header--item:nth-child(3) span{
-    color:#90c1cb;
+.icon-header--item:nth-child(3) span {
+    color: #90c1cb;
     display: inline-block;
     margin-right: 15px;
 }
+
 .icon-header--item:first-child,
 .icon-header--item:nth-child(2),
-.icon-header--item:nth-child(3){
+.icon-header--item:nth-child(3) {
     border-right: 1px solid #90c1cb;
 }
-.header-contact--item{
+
+.header-contact--item {
     align-items: center;
     margin: 0 30px;
 }
-.header-contact--item i{
+
+.header-contact--item i {
     font-size: 35px;
     color: #8fddf6;
     margin: 0 10px;
 }
-.header-contact--item span{
+
+.header-contact--item span {
     display: inline-block;
     font-size: 13px;
     letter-spacing: 1px;
     color: #949494;
     font-weight: 500;
 }
-.header-contact--item:last-child{
+
+.header-contact--item:last-child {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 1px solid #ccc;
     justify-content: center;
 }
-.header-contact--item:last-child i{
+
+.header-contact--item:last-child i {
     font-size: 17px;
 }
+
 /* nav */
-.nav_header-item{
+.nav_header-item {
     display: flex;
     align-items: center;
 }
-.navbar-collapse>ul{
+
+.navbar-collapse>ul {
     list-style: none;
 }
-.navbar-collapse ul > li{
+
+.navbar-collapse ul>li {
     padding: 10px 20px;
 }
-.navbar-collapse ul > li > a{
+
+.navbar-collapse ul>li>a {
     text-decoration: none;
     /* color: #fff; */
 }
-.login,.register,.submit-property{
+
+.login,
+.register,
+.submit-property {
     padding: 10px 20px;
     color: #fff;
 }
 
-.navbar-expand-lg{
+.navbar-expand-lg {
     background-color: #1d487ac2;
 
 }
-.new-nav{
-    top:0;
+
+.new-nav {
+    top: 0;
     position: fixed !important;
     width: 100%;
     z-index: 100;
 }
-.navbar-nav li{
+
+.navbar-nav li {
     position: relative;
 }
-.navbar-nav > li a,.navbar-nav > li > i{
+
+.navbar-nav>li a,
+.navbar-nav>li>i {
     color: #fff;
 }
-.nav-item:hover a{
+
+.nav-item:hover a {
     /* color: #ccc; */
 }
 
-.navbar-nav ul.sub-menu{
+.navbar-nav ul.sub-menu {
     position: absolute;
     top: 57px;
     z-index: 4;
@@ -116,7 +143,7 @@ header .row.bg{
     display: none;
 }
 
-.navbar-nav ul.sub-menu::before{
+.navbar-nav ul.sub-menu::before {
     content: "";
     top: -18px;
     left: 40px;
@@ -124,72 +151,83 @@ header .row.bg{
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid transparent;
-    border-bottom: 10px solid ;
+    border-bottom: 10px solid;
     position: absolute;
 }
-.navbar-nav li:hover .sub-menu{
+
+.navbar-nav li:hover .sub-menu {
     display: block;
 }
 
-.navbar-nav ul.sub-menu li{
+.navbar-nav ul.sub-menu li {
     border-bottom: 1px solid #ccc;
 }
-.navbar-nav ul.sub-menu > li:hover {
+
+.navbar-nav ul.sub-menu>li:hover {
     color: tomato;
     border-bottom: 1px solid #8d8989;
     cursor: pointer;
 }
 
-.navbar-nav ul.sub-menu li:last-child{
+.navbar-nav ul.sub-menu li:last-child {
     border: none;
 }
+
 /* border khi hover doi bottom */
-.navbar-nav > li > a{
+.navbar-nav>li>a {
     position: relative;
 }
-.navbar-nav > li > a::before{
+
+.navbar-nav>li>a::before {
     content: "";
     height: 4px;
     width: 0;
-    background: tomato ;
+    background: tomato;
     position: absolute;
     border-radius: 5px;
     bottom: 0px;
     left: 0px;
     transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.navbar-nav > li:hover > a::before{
+
+.navbar-nav>li:hover>a::before {
     width: 100%;
 
 }
+
 /* search */
-#search-box{
- background-color: #fff;
- border-radius: 30px;
+#search-box {
+    background-color: #fff;
+    border-radius: 30px;
 
 }
-#search-box #search-text{
+
+#search-box #search-text {
     border: none;
     outline: none;
     background: none;
     width: 0;
     transition: all 0.25s ease-in-out;
 }
-#search-box:hover #search-text{
+
+#search-box:hover #search-text {
     width: 200px;
     padding: 6px 12px;
 }
-#search-box #search-text:valid{
+
+#search-box #search-text:valid {
     width: 200px;
     padding: 6px 12px;
 }
-#search-box #search-btn{
+
+#search-box #search-btn {
     border: none;
     outline: none;
     background: none;
     border-radius: 50%;
 }
-.login{
+
+.login {
     border-radius: 50%;
     border: 1px solid #fff;
     width: 40px;
@@ -201,17 +239,21 @@ header .row.bg{
     position: relative;
     z-index: 5;
 }
-.login:hover ul{
+
+.login:hover ul {
     display: block;
 }
-.login:hover{
+
+.login:hover {
     background-color: #fff;
     cursor: pointer;
 }
-.login:hover i{
+
+.login:hover i {
     color: #000;
 }
-.login > ul{
+
+.login>ul {
     position: absolute;
     list-style: none;
     padding-left: 0;
@@ -222,133 +264,24 @@ header .row.bg{
     display: none;
     border-radius: 5px;
 }
-.login > ul::before{
+
+.login>ul::before {
     content: "";
     top: -18px;
     left: 50px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid transparent;
-    border-bottom: 10px solid ;
+    border-bottom: 10px solid;
     position: absolute;
 }
-.login > ul > li a{
-    color: #000; 
-}
-.login > ul > li:hover a{
-    color: #53749a;
-}
-/* end nav */
-article .breadcrumb{
-    margin-bottom: 0 ;
-    padding: 80px;
-    background: url(../Product/img/bg.jpg);
-}
-article .breadcrumb-title ul{
-    padding-left: 0;
-    list-style: none;
-    margin-bottom: 0;
-}
-.breadcrumb-title > ul li{
-    margin: 16px 15px 0 0;
-}
-.breadcrumb-title > ul li i{
-    color: #f5821f;
-    margin-right: 10px;
-}
-.breadcrumb-title > ul li a,
-.breadcrumb-title > ul li{
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 600;
-}
-.breadcrumb-title > ul li a:hover{
-    color: #f5821f;
-}
-.breadcrumb-title > ul li span{
-    margin-left: 15px;
-    font-weight: bold;
+
+.login>ul>li a {
     color: #000;
 }
-.contact{
-    padding: 80px 0;
-}
-.contact-container{
-    border: 1px solid #ccc;
-    padding: 50px 30px;
-    border-radius: 10px;
-}
-.contact-icon{
-    margin-bottom: 10px;
-}
-.contact-title h3 {
-    margin: 20px 0;
-    font-size: 25px;
-    font-weight: bold;
-}
-.info span {
-    color: var(--text-color);
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: block;
-}
-.info span:first-child{
-    margin-bottom: 10px;
-}
-.contact_message{
-    padding-bottom: 80px;
-}
-.contact_message-content{
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 50px;
-    background-color: #f0f4f7;
-}
-.contact_message-content h4{
-    margin-bottom: 30px;
-    font-size: 22px;
-    font-weight: 600;
-    border-left: 3px solid;
-    border-color: var(--text-orange);
-    padding-left: 10px;
-}
-.input-item{
-    position: relative;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.input-item input{
-    /* padding: 20px; */
-    outline: none;
-}
-.input-item .icon{
-    position: absolute;
-    right: 0;
-    padding-right: 20px;
-    color: var(--text-orange);
-}
-.contact_message-content textarea{
-    width: 100%;
-    padding: 20px;
-    outline: none;
-}
-.icon:last-child{
-    top: 20px;
-}
-.form-check label{
-    color: var(--text-color);
-}
-.btn-wraper {
-    display: inline-block;
-    outline: none;
-}
-.btn-wraper button{
-    padding: 17px 40px;
-    background-color: var(--text-orange);
-    color: #fff;
-    border: none;
-    font-size: 20px;
-    margin-top: 30px;
+
+.login>ul>li:hover a {
+    color: #53749a;
 }
 #backtop{
     width: 50px;
@@ -364,6 +297,43 @@ article .breadcrumb-title ul{
     right: 20px;
     cursor: pointer;
 }
+.signin-item,
+.login-item{
+    padding: 70px 50px;
+}
+#signin .item input,
+.login-item input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.btn-wraper ul{
+    /* position: relative;
+     */
+     display: flex;
+     justify-content: space-between;
+     list-style: none;
+     padding-left: 0;
+}
+.btn-wraper ul li button,
+.btn-login button{
+    padding: 8px 25px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #83b0bb;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+.btn-login{
+    justify-content: flex-end;
+    display: flex;
+}
+
 /* mobile */
 @media screen and (max-width: 767px){
     #nav-mobile{
@@ -387,28 +357,27 @@ display: flex;
     border-right: none;
     padding: 0 !important;
 }
-article .breadcrumb{
-    padding: 30px;
+.signin-item, .login-item{
+    padding: 40px 10px;
 }
-.contact-container {
-    margin-bottom: 30px;
-}
-.contact_message-content {
-    padding: 10px;
+.signin-item{
+    border-bottom: 1px solid #ccc;
 }
 }
+
 /* tablet */
 @media screen and (min-width: 767px) and (max-width: 1023px) {
-.contact-container {
-    margin-bottom: 30px;
+    .signin-item, .login-item{
+        padding: 20px 0;
+    }
+    #nav-mobile{
+        display: block !important;
+    }
+    #navbar{
+        display: none;
+    }
 }
-#nav-mobile{
-    display: block !important;
-}
-#navbar{
-    display: none;
-}
-}
+
 /* pc */
 @media screen and(min-width: 1024px) {
 
@@ -442,15 +411,15 @@ article .breadcrumb{
     position: absolute;
     right: 0;
 }
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
 .login{
     display: flex;
     align-items: center;
 }
 .login a{
     color: #fff;
-}
-.error-message {
-    margin-top: 20px;
-    color: red;
-    margin-left: 20px;
 }

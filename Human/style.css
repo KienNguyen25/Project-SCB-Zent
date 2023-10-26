@@ -105,7 +105,7 @@ header .row.bg{
 
 .navbar-nav ul.sub-menu{
     position: absolute;
-    top: 80px;
+    top: 57px;
     z-index: 4;
     padding-left: 0;
     list-style: none;
@@ -340,4 +340,80 @@ article .breadcrumb-title ul{
     bottom: 40px;
     right: 20px;
     cursor: pointer;
+}
+/* mobile */
+@media screen and (max-width: 767px){
+    #nav-mobile{
+        display: block !important;
+    }
+    #navbar{
+        display: none;
+    }
+    .time{
+        font-size: 12px;
+align-items: center;
+display: flex;
+}
+.icon-header .icon-header--item:nth-child(2){
+    display: none !important;
+}
+.icon-header .icon-header--item:nth-child(3){
+    display: none !important;
+}
+.icon-header--item:nth-child(1){
+    border-right: none;
+    padding: 0 !important;
+}
+article .breadcrumb{
+    padding: 30px;
+}
+}
+/* tablet */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    #nav-mobile{
+        display: block !important;
+    }
+    #navbar{
+        display: none;
+    }
+}
+/* pc */
+@media screen and(min-width: 1024px) {
+
+}
+#nav-mobile{
+    display: none;
+}
+.box-login-list{
+    list-style: none;
+    padding-left: 0;
+ 
+
+}
+.box-login-list li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.box-login-list li i{
+    color: #fff;
+}
+#search-mobile{
+    position: relative;
+}
+.box-search{
+    position: absolute;
+    right: 0;
+}
+.login{
+    display: flex;
+    align-items: center;
+}
+.login a{
+    color: #fff;
 }

@@ -12,6 +12,10 @@ $(document).ready(function(){
       // $('.submit-property').css({'border-radius': 'none','margin-right':'0'});
     }
   });
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
     $('.post-container').slick({
         slidesToShow: 3,
         slidesToScroll: 1,

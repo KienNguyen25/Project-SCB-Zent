@@ -53,7 +53,8 @@
     </header>
 
     <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container px-0">
+        <div class="container px-2">
+            <a class="navbar-brand" href="/Home/index.html"><img style="width: 65px;height: auto;" src="/Home/img/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -62,14 +63,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item py-0 d-flex align-items-center">
-                        <a href="#" class="nav-link"><img style="width: 65px;" class="img-fluid" src="img/logo.png"
-                                alt=""></a>
-                    </li>
-                    <li class="nav-item py-0 d-flex align-items-center">
                         <a class="nav-link text-white active" aria-current="page" href="/Home/index.html">Trang Chủ</a>
                     </li>
                     <li class="nav-item py-0 d-flex align-items-center">
-                        <a class="nav-link" href="#">Về Chúng Tôi</a>
+                        <a class="nav-link text-white" href="/About/index.html">Về Chúng Tôi</a>
                         <i class="fa-solid fa-chevron-down"></i>
                         <ul class="sub-menu">
                             <li><a href="/About/index.html">Dịch Vụ</a></li>
@@ -77,7 +74,7 @@
                         </ul>
                     </li>
                     <li class="nav-item py-0 d-flex align-items-center">
-                        <a href="/Product/index.html" class="nav-link">Sản Phẩm</a>
+                        <a href="/Product/index.html" class="nav-link text-white">Sản Phẩm</a>
                         <i class="fa-solid fa-chevron-down"></i>
                         <ul class="sub-menu">
                             <li><a href="/Product Detail/index.html">Căn Hộ</a></li>
@@ -87,10 +84,10 @@
                         </ul>
                     </li>
                     <li class="nav-item py-0 d-flex align-items-center">
-                        <a href="/Blog/index.html" class="nav-link">Tin Tức</a>
+                        <a href="/Blog/index.html" class="nav-link text-white">Tin Tức</a>
                     </li>
                     <li class="nav-item py-0 d-flex align-items-center">
-                        <a href="/Contact/index.html" class="nav-link">Liên Hệ</a>
+                        <a href="/Contact/index.html" class="nav-link text-white">Liên Hệ</a>
                     </li>
 
                 </ul>
@@ -100,24 +97,70 @@
                             class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="login">
-                    <i class="fa-regular fa-user"></i>
-                    <ul>
-                        <li><a href="">Đăng Nhập</a></li>
-                        <li><a href="">Đăng Kí</a></li>
-                    </ul>
-                </div>
+                    <a href="/SignIn/index.html">
+                     <i class="fa-regular fa-user"></i>
+                    </a>
+                 </div>
             </div>
         </div>
     </nav>
+    <div id="nav-mobile">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="/Home/img/logo.png" style="width: 65px;" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item text-white">
+                    <a style="display: inline-block" class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                  </li>
+                  <li class="nav-item text-white dropdown">
+                    <a style="display: inline-block" class="nav-link dropdown-toggle" href="/About/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Về Chúng Tôi
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #53749a;">
+                        <li><a style="display: inline-block" href="/About/index.html">Dịch Vụ</a></li>
+                        <li><a style="display: inline-block" href="/Human/index.html">Con Người</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item text-white dropdown">
+                    <a style="display: inline-block" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sản Phẩm
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #53749a;">
+                        <li><a style="display: inline-block" href="/Product Detail/index.html">Căn Hộ</a></li>
+                        <li><a style="display: inline-block" href="/Product Detail/index.html">ShopHouse</a></li>
+                        <li><a style="display: inline-block" href="/Product Detail/index.html">PenHouse</a></li>
+                        <li><a style="display: inline-block" href="/Product Detail/index.html">Mặt Bằng Kinh Doanh</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item text-white">
+                    <a style="display: inline-block" class="nav-link" aria-disabled="true">Tin Tức</a>
+                  </li>
+                  <li class="nav-item text-white">
+                    <a style="display: inline-block" class="nav-link" aria-disabled="true">Liên Hệ</a>
+                  </li>
+                </ul>
+               <div id="box-login">
+                <ul class=" d-flex box-login-list">
+                    <input id="search-mobile" type="search" style="outline: none; padding: 0 10px;" placeholder="Search">
+                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+               </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
 
     <div class="banner-slider">
         <div class="slider">
             <div class="slider_content">
-                <h1 class="animate__animated animate__bounce  wow" data-animation-in="animate__faceInDown">1 Lorem ipsum
-                    dolor sit amet.</h1>
-                <p class=" animate__animated animate__backInLeft wow">Lorem ipsum dolor sit amet.
-                </p>
-                <div class="button_wrap">
+                <h1 class="animate__animated animate__bounce  wow" data-animation-in="animate__faceInDown">Cùng tạo nên ngôi nhà mơ ước của bạn</h1>
+
+                <div class="button_wrap d-flex">
                     <a href="" class=" btn btn_transparent">button</a>
                     <a href="" class=" btn ">button</a>
                 </div>
@@ -126,10 +169,8 @@
         <div class="slider slider_two">
             <div class="slider_content">
                 <h1 class="animate__animated animate__bounce animate__delay-3s animate__duration-2s wow"
-                    data-animation-in="animate__faceInDown">2 Lorem ipsum dolor sit amet.</h1>
-                <p class=" animate__animated animate__backInLeft wow">Lorem ipsum dolor sit amet.
-                </p>
-                <div class="button_wrap">
+                    data-animation-in="animate__faceInDown">Chọn bất động sản phù hợp với gia đình, cho cuộc sống dễ dàng hơn</h1>
+                <div class="button_wrap d-flex">
                     <a href="" class=" btn btn_transparent">button</a>
                     <a href="" class=" btn ">button</a>
                 </div>
@@ -138,10 +179,8 @@
         <div class="slider slider_three">
             <div class="slider_content">
                 <h1 class="animate__animated animate__bounce animate__delay-5s animate__duration-1s wow"
-                    data-animation-in="animate__faceInDown">3 Lorem ipsum dolor sit amet.</h1>
-                <p class=" animate__animated animate__backInLeft wow">Lorem ipsum dolor sit amet.
-                </p>
-                <div class="button_wrap">
+                    data-animation-in="animate__faceInDown"> Chọn nhà, chọn tương lai của gia đình bạn</h1>
+                <div class="button_wrap d-flex">
                     <a href="" class=" btn btn_transparent">button</a>
                     <a href="" class=" btn ">button</a>
                 </div>
@@ -204,10 +243,10 @@
                                     alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <span>$ 490,000 <label for="">/ monthly</label></span>
-                                <h2>Can ho cao cap</h2>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <span>25.000.000 <label for="">/ Tháng</label></span>
+                               <a href="/Product/index.html" style="text-decoration: none;"><h2>Biệt Thự Liền Kề</h2></a>
+                                <p class="card-text">Regal Victoria là dự án tiêu chuẩn quốc tế 
+                                    được phát triển bởi thương hiệu Regal Homes </p>
                                 <ul class="d-flex">
                                     <li>
                                         <i class="fa-solid fa-bed"></i>
@@ -237,10 +276,10 @@
                                     alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <span>$ 490,000 <label for="">/ monthly</label></span>
-                                <h2>Can ho cao cap</h2>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <span>12.000.000 <label for="">/Tháng</label></span>
+                               <a href="/Product/index.html" style="text-decoration: none;"><h2>Căn Hộ Cao Cấp</h2></a>
+                                <p class="card-text">Regal Victoria là dự án tiêu chuẩn quốc tế 
+                                    được phát triển bởi thương hiệu Regal Homes</p>
                                 <ul class="d-flex">
                                     <li>3
                                         <i class="fa-solid fa-bed"></i>
@@ -270,10 +309,9 @@
                                     alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <span>$ 490,000 <label for="">/ monthly</label></span>
-                                <h2>Can ho cao cap</h2>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <span>50.000.000 <label for="">/ Tháng</label></span>
+                               <a href="/Product/index.html" style="text-decoration: none;"><h2>Nhà Phố ShopHouse</h2></a>
+                                <p class="card-text">Regal Victoria là dự án tiêu chuẩn quốc tế được phát triển bởi thương hiệu Regal Homes</p>
                                 <ul class="d-flex">
                                     <li>3
                                         <i class="fa-solid fa-bed"></i>
@@ -303,10 +341,10 @@
                                     alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <span>$ 490,000 <label for="">/ monthly</label></span>
-                                <h2>Can ho cao cap</h2>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <span>12.000.000 <label for="">/ Tháng</label></span>
+                               <a href="/Product/index.html" style="text-decoration: none;"><h2>REGAL ONE RIVER
+                                BY REGAL HOMES</h2></a>
+                                <p class="card-text">Lấy cảm hứng từ dòng chảy sông Hương và hoa văn truyền thống</p>
                                 <ul class="d-flex">
                                     <li>3
                                         <i class="fa-solid fa-bed"></i>
@@ -336,10 +374,9 @@
                                     alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <span>$ 490,000 <label for="">/ monthly</label></span>
-                                <h2>Can ho cao cap</h2>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <span>12.000.000 <label for="">/ Tháng</label></span>
+                               <a href="/Product/index.html" style="text-decoration: none;"><h2>REGAL CAPITAL HUE</h2></a>
+                                <p class="card-text">Lấy cảm hứng từ dòng chảy sông Hương và hoa văn truyền thống</p>
                                 <ul class="d-flex">
                                     <li>3
                                         <i class="fa-solid fa-bed"></i>
@@ -369,10 +406,9 @@
                                     alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <span>$ 490,000 <label for="">/ monthly</label></span>
-                                <h2>Can ho cao cap</h2>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <span>12.000.000 <label for="">/ Tháng</label></span>
+                               <a href="/Product/index.html" style="text-decoration: none;"><h2>REGAL COMPLEX BY REGAL HOMES</h2></a>
+                                <p class="card-text">Dự án Regal Complex là khu phức hợp 5 sao đến từ thương hiệu Regal Home, sở hữu 683 căn hộ</p>
                                 <ul class="d-flex">
                                     <li>3
                                         <i class="fa-solid fa-bed"></i>
@@ -399,38 +435,33 @@
         <section class="list-project ">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="d-flex count mb-0">
-                            <li>
-                                <div class="icon">
-                                    <i class="fa-solid fa-ruler-combined"></i>
-                                </div>
-                                <span class="counter">560</span><span>+</span>
-                                <h6>Tổng diện tích sàn</h6>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa-solid fa-building-columns"></i>
-                                </div>
-                                <span class="counter">197</span><span>K+</span>
-                                <h6>Căn hộ đã bán</h6>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa-solid fa-file-pen"></i>
-                                </div>
-                                <span class="counter">268</span><span>+</span>
-                                <h6>Dự án</h6>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa-solid fa-couch"></i>
-                                </div>
-
-                                <span class="counter">340</span><span>+</span>
-                                <h6>Số phòng</h6>
-                            </li>
-                        </ul>
+                    <div class="col-lg-3 col-md-6 col-sm-12 count">
+                        <div class="icon">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <span class="counter">197</span><span>K+</span>
+                        <h6>Dự Án Đã Hoàn Thành</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 count">
+                        <div class="icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <span class="counter">197</span><span>K+</span>
+                        <h6>Khách Hàng Hài Lòng</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 count">
+                        <div class="icon">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </div>
+                        <span class="counter">268</span><span>+</span>
+                        <h6>Thiết Kế Có Sẵn</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 count">
+                        <div class="icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <span class="counter">340</span><span>+</span>
+                        <h6>giải thưởng</h6>
                     </div>
                 </div>
             </div>
@@ -1002,6 +1033,102 @@
                 </div>
             </div>
         </section>
+        <section class="blog-box">
+            <div class="container">
+                <div class="post-title text-center">
+                    <span>Mới</span>
+                    <h1 class="text-center ">Tin Tức Mới</h1>
+                </div>
+                    <div class="container_second">
+                        <div class="container_second-post">
+                            <div class="container_second-post--group">
+                                <div class="group-post--left">
+                                    <div class="group-post--left_item1 wow animate__animated animate__backInDown">
+                                        <div class="box">
+                                            <a href="#" class="post-title-group">Những tiện ích ưu việt của sofa để đáp ứng như cầu người dùng</a>
+                                             <ul class="d-flex meta mb-0 mt-3">
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span>232 lượt xem</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-message"></i>
+                                            <span>35 bình luận</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            <span>25/10/2023</span>
+                                        </li>
+                                    </ul>
+                                        </div>
+                                    </div>
+                                    <div class="group-post--left_item2">
+                                        <div class="group-post--left_item2-list wow animate__animated animate__backInUp">
+                                            <div class="box">
+                                                <a href="#" class="post-title-group">Hướng dẫn đặt sofa theo phong thủy theo phong cách Tây Âu</a>
+                                                 <ul class="d-flex meta mb-0 mt-3">
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span>232 lượt xem</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-message"></i>
+                                            <!-- <span>35 bình luận</span> -->
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            <span>25/10/2023</span>
+                                        </li>
+                                    </ul>
+                                            </div>
+                                        </div>
+                                        <div class="group-post--left_item2-list  wow animate__animated animate__backInUp">
+                                            <div class="box">
+                                                <a href="#" class="post-title-group">Ghế sofa kích thước bé giúp người dùng có thể để những nơi hẹp</a>
+                                                 <ul class="d-flex meta mb-0 mt-3">
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span>232 lượt xem</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-message"></i>
+                                            <!-- <span>35 bình luận</span> -->
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            <span>25/10/2023</span>
+                                        </li>
+                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group-post--right wow animate__animated animate__bounceInRight">
+                                   <div class="group-post--right-item">
+                                    <div class="box">
+                                        <a href="#" class="post-title-group">Ý tưởng thiết kế màu sắc trong căn phòng trung tính</a>
+                                         <ul class="d-flex meta mb-0 mt-3">
+                                        <li>
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span>232 lượt xem</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-message"></i>
+                                            <span>35 bình luận</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            <span>25/10/2023</span>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
         <section class="post">
             <div class="container">
                 <div class="row">
@@ -1119,7 +1246,7 @@
                         <div class="col-lg-4 col-sm-12 col-md-6">
                             <div class="post-content">
                                 <div class="post-content-img hover-img">
-                                    <a href=""><img class="img-fluid" src="/Home/img/img-house-3 copy.jpg" alt=""></a>
+                                    <a href=""><img class="img-fluid" src="/Home/img/house1.1.avif" alt=""></a>
                                 </div>
                                 <div class="post-content-des">
                                     <div class="post-des-tag">
@@ -1152,7 +1279,7 @@
                         <div class="col-lg-4 col-sm-12 col-md-6">
                             <div class="post-content">
                                 <div class="post-content-img hover-img">
-                                    <a href=""><img class="img-fluid" src="/Home/img/img-house-3.jpg" alt=""></a>
+                                    <a href=""><img class="img-fluid" src="/Home/img/house1.2.avif" alt=""></a>
                                 </div>
                                 <div class="post-content-des">
                                     <div class="post-des-tag">
@@ -1186,9 +1313,10 @@
                 </div>
             </div>
         </section>
+       
     </article>
     <!-- Footer -->
-    <footer class="text-center text-lg-start  text-muted" style="background-color: #53749a">
+    <footer class=" text-lg-start  text-muted" style="background-color: #53749a">
         <!-- Section: Social media -->
         <section
             class="container align-items-center d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -1230,7 +1358,7 @@
 
         <!-- Section: Links  -->
         <section class="">
-            <div class="container text-center text-md-start mt-5">
+            <div class="container text-md-start mt-5">
                 <!-- Grid row -->
                 <div class="row mt-3">
                     <!-- Grid column -->
@@ -1311,6 +1439,9 @@
         </div>
         <!-- Copyright -->
     </footer>
+    <div class="phone-call animate__animated animate__pulse wow "  data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s">
+        <a href="/Contact/index.html"><i class="fa-solid fa-phone" style="color: #fff;"></i></a>
+     </div>
     <div id="backtop">
         <i class="fa-solid fa-chevron-up"></i>
     </div>

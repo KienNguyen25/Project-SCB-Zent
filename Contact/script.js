@@ -82,4 +82,51 @@ $(document).ready(function(){
 
         
     });
+    // validator
+      $('#myForm').submit(function (event) {
+                var valid = true;
+
+                // Clear any previous error messages
+                $('.error-message').remove();
+
+                // Check "Tên của bạn" field
+                var nameInput = $('#myForm input[placeholder="Tên của bạn"]');
+                if (nameInput.val().trim() === '') {
+                    valid = false;
+                    nameInput.after('<div class="error-message">Vui lòng nhập Tên của bạn</div>');
+                }
+
+                // Check "Email" field
+                var emailInput = $('#myForm input[placeholder="Email"]');
+                var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                if (emailInput.val().trim() === '' || !emailPattern.test(emailInput.val())) {
+                    valid = false;
+                    emailInput.after('<div class="error-message">Vui lòng nhập Email hợp lệ</div>');
+                }
+
+                // Check "Loại sản phẩm" field
+                var productInput = $('#myForm input[placeholder="Loại sản phẩm"]');
+                if (productInput.val().trim() === '') {
+                    valid = false;
+                    productInput.after('<div class="error-message">Vui lòng chọn Loại sản phẩm</div>');
+                }
+
+                // Check "Số của bạn" field
+                var phoneInput = $('#myForm input[placeholder="Số của bạn"]');
+                if (phoneInput.val().trim() === '') {
+                    valid = false;
+                    phoneInput.after('<div class="error-message">Vui lòng nhập Số của bạn</div>');
+                }
+
+                // Check "Enter message" textarea
+                var messageTextarea = $('#myForm textarea');
+                if (messageTextarea.val().trim() === '') {
+                    valid = false;
+                    messageTextarea.after('<div class="error-message">Vui lòng nhập tin nhắn</div>');
+                }
+
+                if (!valid) {
+                    event.preventDefault(); // Prevent the form from submitting if there are errors
+                }
+            });
 });

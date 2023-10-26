@@ -50,7 +50,8 @@
 
    
     <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container px-0">
+        <div class="container px-2">
+            <a class="navbar-brand" href="#"><img style="width: 65px;height: auto;" src="/Home/img/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -58,15 +59,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item py-0 d-flex align-items-center">
-                        <a href="#" class="nav-link"><img style="width: 65px;" class="img-fluid" src="img/logo.png"
+                    <!-- <li class="nav-item py-0 d-flex align-items-center">
+                        <a href="#" class="nav-link text-white"><img style="width: 65px;" class="img-fluid" src="img/logo.png"
                                 alt=""></a>
-                    </li>
+                    </li> -->
                     <li class="nav-item py-0 d-flex align-items-center">
                         <a class="nav-link text-white active" aria-current="page" href="/Home/index.html">Trang Chủ</a>
                     </li>
                     <li class="nav-item py-0 d-flex align-items-center">
-                        <a class="nav-link" href="#">Về Chúng Tôi</a>
+                        <a class="nav-link text-white" href="#">Về Chúng Tôi</a>
                         <i class="fa-solid fa-chevron-down"></i>
                         <ul class="sub-menu">
                             <li><a href="/About/index.html">Dịch Vụ</a></li>
@@ -74,7 +75,7 @@
                         </ul>
                     </li>
                     <li class="nav-item py-0 d-flex align-items-center">
-                        <a href="/Product/index.html" class="nav-link">Sản Phẩm</a>
+                        <a href="/Product/index.html" class="nav-link text-white">Sản Phẩm</a>
                         <i class="fa-solid fa-chevron-down"></i>
                         <ul class="sub-menu">
                             <li><a href="/Product Detail/index.html">Căn Hộ</a></li>
@@ -84,10 +85,10 @@
                         </ul>
                     </li>
                     <li class="nav-item py-0 d-flex align-items-center">
-                        <a href="/Blog/index.html" class="nav-link">Tin Tức</a>
+                        <a href="/Blog/index.html" class="nav-link text-white">Tin Tức</a>
                     </li>
                     <li class="nav-item py-0 d-flex align-items-center">
-                        <a href="/Contact/index.html" class="nav-link">Liên Hệ</a>
+                        <a href="/Contact/index.html" class="nav-link text-white">Liên Hệ</a>
                     </li>
 
                 </ul>
@@ -97,15 +98,62 @@
                             class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="login">
-                    <i class="fa-regular fa-user"></i>
-                    <ul>
-                        <li><a href="">Đăng Nhập</a></li>
-                        <li><a href="">Đăng Kí</a></li>
-                    </ul>
-                </div>
+                    <a href="/SignIn/index.html">
+                     <i class="fa-regular fa-user"></i>
+                    </a>
+                 </div>
             </div>
         </div>
     </nav>
+    <div id="nav-mobile">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="/Home/img/logo.png" style="width: 65px;" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item text-white">
+                    <a style="display: inline-block" class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                  </li>
+                  <li class="nav-item text-white dropdown">
+                    <a style="display: inline-block" class="nav-link dropdown-toggle" href="/About/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Về Chúng Tôi
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #53749a;">
+                        <li><a style="display: inline-block" href="/About/index.html">Dịch Vụ</a></li>
+                        <li><a style="display: inline-block" href="/Human/index.html">Con Người</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item text-white dropdown">
+                    <a style="display: inline-block" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sản Phẩm
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #53749a;">
+                        <li><a style="display: inline-block" href="/Product Detail/index.html">Căn Hộ</a></li>
+                        <li><a style="display: inline-block" href="/Product Detail/index.html">ShopHouse</a></li>
+                        <li><a style="display: inline-block" href="/Product Detail/index.html">PenHouse</a></li>
+                        <li><a style="display: inline-block" href="/Product Detail/index.html">Mặt Bằng Kinh Doanh</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item text-white">
+                    <a style="display: inline-block" class="nav-link" aria-disabled="true">Tin Tức</a>
+                  </li>
+                  <li class="nav-item text-white">
+                    <a style="display: inline-block" class="nav-link" aria-disabled="true">Liên Hệ</a>
+                  </li>
+                </ul>
+               <div id="box-login">
+                <ul class=" d-flex box-login-list">
+                    <input id="search-mobile" type="search" style="outline: none; padding: 0 10px;" placeholder="Search">
+                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+               </div>
+              </div>
+            </div>
+          </nav>
+    </div>
     <article>
         <section class="breadcrumb">
             <div class="container">
@@ -171,8 +219,8 @@
                             </div>
                             <div class="related-page">
                                 <h4>Bài Viết Liên Quan</h4>
-                                <div class="row multiple-items justify-content-between">
-                                    <div class="col-lg-6 related-page-item px-0">
+                                <div class=" multiple-items justify-content-between">
+                                    <div class="col-lg-6 col-sm-12 col-md-12 related-page-item px-0">
                                       <div class="hover-img">
                                           <img class="img-fluid" src="/Blog Detail/img/house-2.jpg" alt="">
                                       </div>
@@ -182,7 +230,7 @@
                                         <p>Đầu tư BĐS chưa bao giờ là hết hấp dẫn dù dịch bệnh Covid 19 diễn biến phức tạp</p>
                                        </div>
                                     </div>
-                                    <div class="col-lg-6 related-page-item px-0">
+                                    <div class="col-lg-6 col-sm-12 col-md-12 related-page-item px-0">
                                       <div class="hover-img">
                                           <img class="img-fluid" src="/Blog Detail/img/house-2.jpg" alt="">
                                       </div>
@@ -464,7 +512,7 @@
         </section>
     </article>
     
-    <footer class="text-center text-lg-start  text-muted" style="background-color: #53749a">
+    <footer class=" text-lg-start  text-muted" style="background-color: #53749a">
         <!-- Section: Social media -->
         <section
             class="container align-items-center d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -506,7 +554,7 @@
 
         <!-- Section: Links  -->
         <section class="">
-            <div class="container text-center text-md-start mt-5">
+            <div class="container  text-md-start mt-5">
                 <!-- Grid row -->
                 <div class="row mt-3">
                     <!-- Grid column -->

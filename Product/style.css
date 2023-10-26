@@ -19,7 +19,7 @@ header .row.bg{
     color:#90c1cb
 }
 .icon-header--item{
-    /* display: flex;
+    /* display: flex;.product-info > a
     align-items: center; */
 }
 .icon-header--item:first-child i,
@@ -106,7 +106,7 @@ header .row.bg{
 
 .navbar-nav ul.sub-menu{
     position: absolute;
-    top: 80px;
+    top: 57px;
     z-index: 4;
     padding-left: 0;
     list-style: none;
@@ -447,10 +447,11 @@ article .product-content {
 .product-info > a{
     text-decoration: none;
     display: block;
-    color: #000;
-    font-size: 22px;
+    color: rgb(217, 38, 38);
+    font-size: 18px;
     margin: 15px 0;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .product-info > a:hover{
     color: var(--text-orange);
@@ -536,3 +537,103 @@ article .product-content {
     right: 20px;
     cursor: pointer;
 }
+/* mobile */
+@media screen and (max-width: 767px){
+    #nav-mobile{
+        display: block !important;
+    }
+    #navbar{
+        display: none;
+    }
+    .time{
+        font-size: 12px;
+align-items: center;
+display: flex;
+}
+.icon-header .icon-header--item:nth-child(2){
+    display: none !important;
+}
+.icon-header .icon-header--item:nth-child(3){
+    display: none !important;
+}
+.icon-header--item:nth-child(1){
+    border-right: none;
+    padding: 0 !important;
+}
+article .breadcrumb{
+    padding: 30px;
+}
+.pagination li a {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.pagination li{
+    margin: 0 3px;
+}
+.pagination li:first-child a, .pagination li:last-child a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+ }
+}
+/* tablet */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .pagination li:first-child a, .pagination li:last-child a{
+        width: 50px !important;
+        height: 50px !important;
+        line-height: 50px;
+    }
+    .pagination li{
+        margin: 0 10px !important; 
+    }
+    #nav-mobile{
+        display: block !important;
+    }
+    #navbar{
+        display: none;
+    }
+}
+/* pc */
+@media screen and(min-width: 1024px) {
+
+}
+#nav-mobile{
+    display: none;
+}
+.box-login-list{
+    list-style: none;
+    padding-left: 0;
+ 
+
+}
+.box-login-list li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.box-login-list li i{
+    color: #fff;
+}
+#search-mobile{
+    position: relative;
+}
+.box-search{
+    position: absolute;
+    right: 0;
+}
+.login{
+    display: flex;
+    align-items: center;
+}
+.login a{
+    color: #fff;
+}
+
+

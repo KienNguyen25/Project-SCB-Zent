@@ -30,6 +30,7 @@ new WOW().init();
           // $('.submit-property').css({'border-radius': 'none','margin-right':'0'});
         }
       });
+  
       $('.counter').counterUp({
         delay: 10,
         time: 1000
@@ -134,6 +135,19 @@ new WOW().init();
     }
   });
   $('#backtop').click(function(){
+    $('html, body').animate({
+      scrollTop:0
+      }, 500);
+  });
+  $('#phone-call').hide();
+  $(window).scroll(function(){
+    if($(this).scrollTop()){
+      $('#phone-call').fadeIn();
+    }else{
+      $('#phone-call').fadeOut();
+    }
+  });
+  $('#phone-call').click(function(){
     $('html, body').animate({
       scrollTop:0
       }, 500);
